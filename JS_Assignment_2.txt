@@ -1,0 +1,98 @@
+DAY2 JavaScript:
+
+ques 1) What are the differences between var, let and const?
+var :- Old Way of declaring variables
+          Can be reassigned and updated
+example-      var x=10;
+                console.log(x);//10
+               x=15;
+             console.log(x);//15
+
+let : - Modern way of declaring variables.
+         Can be reassigned but not redeclared.
+ example-
+       let a=10;
+     console.log(a);//10
+
+const :- values are not be changed and used for constant 
+             cannot be reassigned or redeclared .
+example-
+  const a=40;
+console.log(a);//40
+
+ques 2) Difference between undefined vs not defined vs NaN
+ 
+*)undefined:- 
+  Variable has been declared but has not been assigned a value.
+ example 
+  let x;
+console.log(x);
+// undefined
+
+*)Not defined
+Truying to access a variable that has not been declared.
+example
+conole.log(x);//x is not defined
+
+*)NaN(not a number)
+Invalid or undefiend mathematical operation
+It is a special value of the number data type.
+example
+let a="a"/2;
+console.log(a);
+
+
+
+ques 3) What is difference between null and undefined and where to use what?
+ans )  
+*) undefined: - When a variable is declared but not assigned a value is called undefined.
+                      -  if you access object property that doesnot exist , it return 'undefined'.	
+                      Example -
+                                       let x;
+                                 console.log(x); //undefined
+                         
+                        let obj={"name":"nikita",  rollno=23}//undefined
+                             
+
+*) null: - It is often used to indicate that a variable should be empty or does not point to any object.
+             :- It if you access the prompt function and doesnot applies any input then it also returns null.
+   example:-
+   let z;
+ console.log(z);//null
+
+ let y=prompt("enter the number");
+     console.log(y); //null
+
+
+
+Ques 4) What is execution context?
+ans ..The browser's JavaScript engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.   
+Execution context: 1) creation phase 2) Execution Phase
+
+Creation Phase
+-Memory space allocation
+-Function declarations assiged
+-Variable declarations assigned
+
+Execution Phase
+-js is executed line by line.
+
+
+ques 5)  What is use of prompt in javascript?
+ans .. Prompt is a methos that is used for taking input from the user.
+       .. Prompt gets the input and show options ok or cancel, ok means it stores the data or information to the particular variable or cancel store null. 
+example:- 
+let a=prompt("enter the number "):
+console.log(a);
+
+Ques 6) Why js is dynamic language?
+ans.. Dynamic language is a high-level programming language that at runtime excutes many common programming behaviours that static programming languages perform during compliation and these behaviour could be adding a new code, modifying.
+
+
+       
+
+
+
+
+
+
